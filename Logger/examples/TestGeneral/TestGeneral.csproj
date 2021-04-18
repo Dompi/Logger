@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>483dc71c-9cbc-4fdc-859d-f3e7bdf30bf6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Logger.Abstractions\Logger.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Logger.Console\Logger.Console.csproj" />
+    <ProjectReference Include="..\..\src\Logger.File\Logger.File.csproj" />
+    <ProjectReference Include="..\..\src\Logger.Stream\Logger.Stream.csproj" />
+  </ItemGroup>
+
+</Project>
